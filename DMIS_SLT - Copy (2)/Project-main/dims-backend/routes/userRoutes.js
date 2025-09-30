@@ -8,7 +8,8 @@ const {
   getUserById,
   updateUser,
   deleteUser,
-  metamaskLogin
+  metamaskLogin,
+  
 
 } = require('../controllers/userController');
 const { protect } = require('../middleware/authMiddleware');

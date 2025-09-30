@@ -8,6 +8,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 // Pages
 import Index from "./pages/Index";
 import Login from "./pages/Login";
+import Bio from "./pages/BiometricAuth";
 import Signup from "./pages/Signup";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import UserDashboard from "./pages/user/UserDashboard";
@@ -21,6 +22,7 @@ import Profile from "./pages/user/Profile";
 import NotFound from "./pages/NotFound";
 import BlockChain from "./pages/admin/BlockChain";
 import BlockChainUser from "./pages/user/BlockChainUser";
+import BiometricAuth from "./pages/BiometricAuth";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +36,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/bio" element={<BiometricAuth />} />
             <Route path="/signup" element={<Signup />} />
             {/* Admin Routes */}
             <Route path="/admin/dashboard" element={<AdminDashboard />} />

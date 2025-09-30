@@ -28,6 +28,11 @@ const Index = () => {
             <Button onClick={() => navigate('/signup')} variant="w2b" size="lg">
               Sign Up
             </Button>
+
+            <Button onClick={() => navigate('/bio')} variant="w2b" size="lg">
+              Bio
+            </Button>
+            
           </div>
         </div>
 

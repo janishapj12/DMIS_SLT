@@ -1,3 +1,4 @@
+
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
@@ -208,4 +209,3 @@ exports.metamaskLogin = async (req, res) => {
     res.status(500).json({ success: false, message: err.message });
   }
 };
-
