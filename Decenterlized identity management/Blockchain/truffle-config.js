@@ -3,7 +3,7 @@ module.exports = {
     development: {
       host: "127.0.0.1",     // Ganache GUI host
       port: 8545,            // Ganache GUI default port
-      network_id: "1759302433230",       // Match any network ID
+      network_id: "1759381865560",       // Match any network ID
       gas: 6721975,          // Gas limit (safe default for Ganache)
       gasPrice: 20000000000, // 20 gwei
     },
