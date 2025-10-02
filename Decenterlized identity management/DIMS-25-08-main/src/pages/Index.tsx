@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import { Shield, Users, BarChart3 } from "lucide-react";
+import { Shield, Users, BarChart3, Fingerprint } from "lucide-react";
 import HeroGradient from "../components/HeroGradient/HeroGradient.tsx";
 
 const Index = () => {
@@ -27,10 +27,6 @@ const Index = () => {
             </Button>
             <Button onClick={() => navigate('/signup')} variant="w2b" size="lg">
               Sign Up
-            </Button>
-
-            <Button onClick={() => navigate('/bio')} variant="w2b" size="lg">
-              Bio
             </Button>
             
           </div>

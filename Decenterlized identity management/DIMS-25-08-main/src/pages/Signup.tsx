@@ -8,6 +8,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { UserPlus } from "lucide-react";
 import HeroGradient from "@/components/HeroGradient/HeroGradient";
+import { Fingerprint } from "lucide-react";
 
 const Signup = () => {
   const [username, setUsername] = useState("");
@@ -113,6 +114,12 @@ const Signup = () => {
               <Button type="submit" className="w-full hover:bg-blue-800" disabled={loading}>
                 {loading ? "Creating account..." : "Create Account"}
               </Button>
+
+
+            <Button onClick={() => navigate('/bio')} variant="w2b" size="lg" className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-3 rounded-lg font-medium hover:from-orange-600 hover:to-pink-600 transition-all duration-200">
+              <Fingerprint className="w-5 h-5 mr-2" /> Register with Biometrics
+            </Button>
+
             </form>
 
             <div className="mt-4 text-center text-sm">

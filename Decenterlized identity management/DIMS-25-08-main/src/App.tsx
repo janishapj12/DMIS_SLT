@@ -8,7 +8,6 @@ import { AuthProvider } from "./contexts/AuthContext";
 // Pages
 import Index from "./pages/Index";
 import Login from "./pages/Login";
-import Bio from "./pages/BiometricAuth";
 import Signup from "./pages/Signup";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import UserDashboard from "./pages/user/UserDashboard";
