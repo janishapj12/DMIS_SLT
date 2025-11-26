@@ -23,6 +23,7 @@ import NotFound from "./pages/NotFound";
 import BlockChain from "./pages/admin/BlockChain";
 import BlockChainUser from "./pages/user/BlockChainUser";
 import BiometricAuth from "./pages/BiometricAuth";
+import CertificatesPage from "./pages/user/CertificatesPage";
 
 const queryClient = new QueryClient();
 
@@ -55,7 +56,7 @@ const App = () => (
             <Route path="/user/dashboard" element={<UserDashboard />} />
             <Route path="/user/profile" element={<Profile />} />
             <Route path="/user/blockchain-user" element={<BlockChainUser />} />
-           
+            <Route path="/user/certificates" element={<CertificatesPage />} />
             
             {/* Catch-all route */}
             <Route path="*" element={<NotFound />} />

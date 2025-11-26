@@ -7,7 +7,7 @@ const cors = require('cors')
 const userRoutes = require('./routes/userRoutes');
 const auditLogRoutes = require('./routes/Aditlogroute');
 const bio = require('./routes/authRoutes');
-
+const certificateRoutes = require("./routes/certificateRoutes");
 
 dotenv.config();
 
@@ -20,7 +20,7 @@ app.get((req,res) => res.send('hello'))
 app.use('/api/users', userRoutes);
 app.use("/api/audit-logs", auditLogRoutes);
 app.use("/api/auth", bio);
-
+app.use("/api/certificates", certificateRoutes);
 
 
 const PORT = process.env.PORT || 5000;

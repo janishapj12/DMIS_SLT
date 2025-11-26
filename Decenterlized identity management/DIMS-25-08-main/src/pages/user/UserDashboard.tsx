@@ -11,6 +11,7 @@ const UserDashboard = () => {
     { label: "Dashboard", href: "/user/dashboard", icon: BarChart3 },
     { label: "Profile", href: "/user/profile", icon: User },
     { label: "Blockchain", href: "/user/blockchain-user", icon: Globe },
+    { label: "Certificates", href: "/user/certificates", icon: Globe },
    
   ];
 
